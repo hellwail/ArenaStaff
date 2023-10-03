@@ -1,0 +1,55 @@
+.main{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item{
+    width: 30%;
+    margin-bottom: 50px;
+    background: #f5f5f5;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.item img{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px 10px;
+    transition: transform 500ms ease;
+}
+
+.item img:hover{
+    transform: scale(1.05);
+}
+
+.item h2, .item p, .item b{
+    margin: 10px 20px;
+    color: #333;
+}
+
+.item b{
+    color: #7a2fc5
+}
+
+.buy{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #7a2fc5;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 500ms ease;
+}
+
+.buy:hover{
+    transform: scale(1.5) translateY(-5px);
+}

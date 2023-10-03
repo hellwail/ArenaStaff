@@ -1,0 +1,93 @@
+header{
+    position: relative;
+    
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nav {
+    float: right;
+    list-style: none;
+}
+
+.nav li {
+    display: inline;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+}
+
+.nav li:hover {
+    opacity: 0.5;
+}
+
+.presentation{
+    margin: 50px;
+    background: url('../../assets/1.png') no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #bcbcbc;
+    position: relative;
+}
+
+.presentation::after {
+    content: 'Лучшие товары для вашей арены';
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 300px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.presentation::before {
+    content: 'По низким ценам';
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    width: 300px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.cart{
+    float: right;
+    cursor: pointer;
+    transition: color 500ms ease;
+}
+
+.cart:hover,
+.cart:active{
+    color: #7a2fc5;
+}
+
+.bag{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 450px;
+    background: #8362a1e8;
+    -webkit-box-shadow: 4px 5px 15px -7px #606060;
+    box-shadow: 4px 5px 15px -7px #606060;
+    z-index: 1;
+    padding: 20px;
+}
+
+.empty{
+    
+}
+
+.sum{
+    font-weight: bold;
+    color:antiquewhite;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
