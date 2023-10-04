@@ -1,0 +1,41 @@
+.full{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #827989d3;
+    z-index: 222;
+    overflow: auto;
+}
+
+.full > div{
+    width: 600px;
+    position: relative;
+    margin: 10% auto;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.full h2, .full p, .full b{
+    margin: 10px 20px;
+    color: #333;
+}
+
+.full b{
+    color: #7a2fc5;
+}
+
+
+.full img{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px 10px;
+    transition: transform 500ms ease;
+    cursor: pointer;
+}
+
+.full img:hover{
+    transform: scale(1.05);
+}
